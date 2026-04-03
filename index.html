@@ -2,48 +2,234 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BCBC Technician Tools and Learning System</title>
   <style>
     body {
-      background: #0d0d0d;
-      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      background: #0b0f14;
+      color: #e8eef5;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px;
     }
-    h1 { color: #00ffcc; }
-    .box {
-      margin: 20px auto;
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 50px;
+    }
+
+    .top-logo {
+      max-width: 500px;
+      width: 90%;
+      margin: 10px auto 20px;
+      display: block;
+    }
+
+    h1 {
+      color: #00e0c6;
+      margin: 10px 0 10px;
+      font-size: 2.2rem;
+    }
+
+    .subtitle {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #d5dde7;
+    }
+
+    .mission {
+      max-width: 950px;
+      margin: 0 auto 35px;
       padding: 20px;
-      border: 1px solid #333;
-      max-width: 600px;
-      background: #111;
+      background: #111822;
+      border: 1px solid #233243;
+      border-radius: 14px;
+      text-align: left;
+      line-height: 1.7;
+      box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    }
+
+    .mission h2 {
+      margin-top: 0;
+      color: #7dd3fc;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #111822;
+      border: 1px solid #233243;
+      border-radius: 14px;
+      padding: 22px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #00e0c6;
+      font-size: 1.25rem;
+    }
+
+    .card p {
+      line-height: 1.6;
+      color: #d8e0ea;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.7;
+      color: #d8e0ea;
+    }
+
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .repo-list {
+      text-align: left;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .status {
+      max-width: 950px;
+      margin: 35px auto 20px;
+      padding: 18px 20px;
+      background: #111822;
+      border: 1px solid #233243;
+      border-radius: 14px;
+      line-height: 1.6;
+    }
+
+    .status strong {
+      color: #00e0c6;
+    }
+
+    .bottom-logo {
+      max-width: 700px;
+      width: 95%;
+      margin: 35px auto 0;
+      display: block;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #9fb0c3;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .mission,
+      .card,
+      .status {
+        padding: 18px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="page">
+    <img src="bannertop.png" alt="BCBC Technologies Logo" class="top-logo">
 
-<img src="bannertop.png" style="max-width: 500px; width: 90%; margin-bottom: 20px;">
-<h1>BCBC Technician Tools and Learning System</h1>
+    <h1>BCBC Technician Tools and Learning System</h1>
 
-<div class="box">
-  <h2>Welcome</h2>
-  <p>This is the central hub for BCBC Tech Tools, learning systems, and recovery solutions.</p>
-</div>
+    <p class="subtitle">
+      A technician-first platform focused on practical repair tools, guided learning,
+      Linux education, privacy-at-home concepts, recovery workflows, and real-world
+      system confidence for beginners and experienced users alike.
+    </p>
 
-<div class="box">
-  <h2>Projects</h2>
-  <p>• Technician Tools (Bootable System)</p>
-  <p>• Learning System (Beginner → Advanced)</p>
-  <p>• Privacy & Home Networking Education</p>
-</div>
+    <div class="mission">
+      <h2>Central Hub</h2>
+      <p>
+        Welcome to the main public hub for BCBC Tech projects. This site is being built
+        to connect technician tools, guided learning, demo systems, Linux education,
+        privacy-focused training, and future support resources into one practical platform.
+      </p>
+      <p>
+        The goal is simple: help people learn, troubleshoot, recover, and build confidence
+        with technology through real examples, structured guidance, and tools designed to be
+        useful in the real world.
+      </p>
+    </div>
 
-<div class="box">
-  <h2>Status</h2>
-  <p>🚧 Actively in development</p>
+    <div class="grid">
+      <div class="card">
+        <h2>Technician Tools</h2>
+        <p>
+          Bootable recovery concepts, guided troubleshooting, repair workflows,
+          technician-focused utilities, and structured pathways for solving real problems.
+        </p>
+        <p><a href="#">BCBC Technician Tools and Learning System</a></p>
+      </div>
 
+      <div class="card">
+        <h2>Learning Linux</h2>
+        <p>
+          Beginner-friendly Linux learning content, practical lessons, examples,
+          workflow guidance, and future educational pages focused on real understanding.
+        </p>
+        <p><a href="#">Learning Linux Pages</a></p>
+      </div>
 
-</div>
-<img src="bannerbottom.png" style="max-width: 700px; width: 95%; margin-top: 30px;">
+      <div class="card">
+        <h2>Project Hub and Demos</h2>
+        <p>
+          This section will connect active development work, demo pages, previews,
+          testing areas, and progress snapshots as the platform expands.
+        </p>
+        <p><a href="#">Project Overview and Demos</a></p>
+      </div>
+
+      <div class="card">
+        <h2>Other Repositories</h2>
+        <ul class="repo-list">
+          <li><a href="https://github.com/WJFranza/bcbctech">bcbctech</a></li>
+          <li><a href="https://github.com/WJFranza/bcbc-log-capture-tools">bcbc-log-capture-tools</a></li>
+        </ul>
+        <p>
+          Additional repositories, support pages, and linked project resources will be added here over time.
+        </p>
+      </div>
+    </div>
+
+    <div class="status">
+      <strong>Current Status:</strong> Active development in progress. This site is serving as the
+      main public landing page and will continue to grow into a broader project hub linking tools,
+      learning materials, demos, and future offerings.
+    </div>
+
+    <img src="bannerbottom.png" alt="BCBC Chicken and Cow Banner" class="bottom-logo">
+
+    <div class="footer">
+      Built for practical learning, real-world troubleshooting, and technician-first guidance.
+    </div>
+  </div>
 </body>
 </html>
